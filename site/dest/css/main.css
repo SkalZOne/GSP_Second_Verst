@@ -176,4 +176,55 @@ header .imglinks img:nth-child(1) {
 .secondcontent .rightblock p:nth-child(1n+2) span {
   color: #EE4248;
 }
+
+.thirdcontent {
+  width: 1126px;
+  height: 459px;
+  margin-left: 8%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.thirdcontent p {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42.78px;
+  color: #1F2E35;
+}
+.thirdcontent .row {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  margin-top: 20px;
+}
+.thirdcontent .column {
+  padding: 10px 10px 10px 10px;
+}
+.thirdcontent .column img {
+  width: 80px;
+  height: 80px;
+}
+.thirdcontent .column p {
+  font-size: 28px;
+  margin-top: 15px;
+}
+.thirdcontent .column p:nth-child(2) {
+  color: #EE4248;
+}
+.thirdcontent .column p:nth-child(3) {
+  color: #30444E;
+  font-size: 18px;
+  line-height: 27px;
+}
+.thirdcontent button {
+  width: 161px;
+  height: 53px;
+  border-radius: 4px;
+  background-color: #EE4248;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.2509803922);
+  font-size: 20px;
+  line-height: 28.94px;
+  color: white;
+  margin-top: 30px;
+}
 /*# sourceMappingURL=main.css.map */
