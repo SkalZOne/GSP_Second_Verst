@@ -14,31 +14,11 @@
     }
 }
 
-* {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: #1F2E35CC;
-}
-
-button {
-    border: none;
-}
-
-header {
-    height: 100px;
-    box-shadow: 0 1px 4px 0 #00000040;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
+@mixin logo($margin){
     .logo {
         font-size: 75px;
         font-weight: 900;
-        margin-top: 140px;
+        margin-top: $margin;
         span {
             margin: 0 -11px;
             &:nth-child(1) {
@@ -75,6 +55,30 @@ header {
             }
         }
     }
+}
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #1F2E35CC;
+}
+
+button {
+    border: none;
+}
+
+header {
+    height: 100px;
+    box-shadow: 0 1px 4px 0 #00000040;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include logo(140px);
 
     .links {
         a {
@@ -253,4 +257,66 @@ header {
         }
     }
     @include button();
+}
+
+.fourthblock {
+    width: 1126px;
+    height: 188px;
+    margin-left: 110px;
+    display: flex;
+    margin-top: 100px;
+
+    .column {
+        
+        &:nth-child(1) {
+            @include logo(0);
+            width: 317px;
+            height: 100%;
+            margin-left: 10px;
+
+            .inner {
+                width: 317px;
+                height: 50%;
+                position: relative;
+                bottom: 150px;
+
+                p {
+                    font-size: 18px;
+
+                    &:nth-child(1) {
+                        color: #263238;
+                        line-height: 21.09px;
+                        font-weight: 500;
+                    }
+                    &:nth-child(2) {
+                        margin-top: 10px;
+                        color: #263238;
+                        width: 317px;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            width: 71%;
+            height: 100%;
+
+            p {
+                font-size: 18px;
+                line-height: 26.85px;
+                color: #263238;
+                margin-left: 20px;
+
+                &:nth-child(1) {
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        
+    }
+
+    
 }

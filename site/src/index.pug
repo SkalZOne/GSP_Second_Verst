@@ -1,13 +1,5 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title DSI
-        link(rel="stylesheet", href="css/main.css")
-    body 
-        header
-            .logo 
+mixin logo
+    .logo 
                 span D 
                 span S 
                 span I
@@ -17,6 +9,18 @@ html(lang="en")
                         span SAMSARA 
                         br
                         span INDONESIA
+    
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title DSI
+        link(rel="stylesheet", href="css/main.css")
+    body 
+        header
+            +logo
 
             .links 
                 each name in ['Services', 'Product', 'Technology', 'About', 'Client', 'Partner']
@@ -66,3 +70,13 @@ html(lang="en")
                     p Our Product 
                     p First JAVA, runs on more than 850 million personal computers worldwide, and on billions of devices worldwide, including mobile and TV devices.
                     button Read More
+
+    .fourthblock
+            .column 
+                +logo
+                .inner
+                    p PT Dwidasa Samsara Indonesia
+                    p Ruko Jalur Sutera 29A No. 53 #[br] Alam Sutera Serpong, Tangerang 15323
+            .column
+                p Contact 
+                p Phone : +62.21.5314.1135 #[br] Fax : +62.21.5314.1135 #[br] Email : community@dwidasa.com
