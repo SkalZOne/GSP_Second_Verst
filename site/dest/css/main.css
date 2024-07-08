@@ -181,6 +181,7 @@ header .imglinks img:nth-child(1) {
   width: 1126px;
   height: 459px;
   margin-left: 8%;
+  margin-top: 150px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -286,6 +287,7 @@ header .imglinks img:nth-child(1) {
 }
 .fourthblock .column:nth-child(1) .inner p {
   font-size: 18px;
+  margin-left: -8px;
 }
 .fourthblock .column:nth-child(1) .inner p:nth-child(1) {
   color: #263238;
@@ -312,5 +314,20 @@ header .imglinks img:nth-child(1) {
   font-weight: 500;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+footer {
+  width: 1339px;
+  height: 64px;
+  background-color: #EE4248;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 18px;
+  line-height: 21.09px;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
