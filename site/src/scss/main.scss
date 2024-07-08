@@ -10,8 +10,11 @@ a {
     color: #1F2E35CC;
 }
 
+button {
+    border: none;
+}
+
 header {
-    border: 2px solid black;
     height: 100px;
     box-shadow: 0 1px 4px 0 #00000040;
     display: flex;
@@ -69,7 +72,6 @@ header {
             margin-left: 10px;
             margin-bottom: 1px;
             cursor: pointer;
-
             &:nth-child(8) {
                 display: inline-block;
             }
@@ -93,5 +95,72 @@ header {
                 height: 18.59px;
             }
         }
+    }
+}
+
+.firstcontent {
+    border: 2px solid black;
+    height: 651px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        border: 2px solid green;
+        width: 1125px;
+        height: 500px;
+        display: flex;
+
+        .leftblock {
+            border: 2px solid blue;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                font-size: 48px;
+                line-height: 64.17px;
+                color: #1F2E35;
+                font-weight: 700;
+
+                &:nth-child(2) {
+                    color: #EE4248;
+                }
+                &:nth-child(3) {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 28.94px;
+                    margin-top: 20px;
+                }
+            }
+            button {
+                width: 161px;
+                height: 53px;
+                border-radius: 4px;
+                background-color: #EE4248;
+                box-shadow: 1px 2px 4px 0 #00000040;
+                font-size: 20px;
+                line-height: 28.94px;
+                color: white;
+                margin-top: 30px;
+            }
+        }
+
+        .rightblock {
+            border: 2px solid blue;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 562.97px;
+                height: 381.61px;
+            }
+        }
+
+
     }
 }
