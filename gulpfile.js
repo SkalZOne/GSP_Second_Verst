@@ -21,7 +21,9 @@ gulp.task('sass-compile', function(){
 // Компиляция Pug
 gulp.task('pug-compile', function(){
     return gulp.src('site/src/**/*.pug')
-    .pipe(pug())
+    .pipe(pug({
+        pretty: true
+    }))
     .pipe(gulp.dest('site/dest'))
     .pipe(browserSync.stream())
 })
@@ -35,6 +37,6 @@ gulp.task('default', function(){
     notify: false
     });
   watch('site/src/scss/**/*.scss', gulp.series('sass-compile'));
-  watch('site/src/*.pug', gulp.series('pug-compile'));
+  watch('site/src/**/*.pug', gulp.series('pug-compile'));
   watch('site/dest/*.html').on('change', browserSync.reload)
 })

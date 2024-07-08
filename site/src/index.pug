@@ -3,7 +3,32 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title DSI
         link(rel="stylesheet", href="css/main.css")
     body 
+        header
+            .logo 
+                span D 
+                span S 
+                span I
+                    .righttext
+                        span DWIDASA 
+                        br
+                        span SAMSARA 
+                        br
+                        span INDONESIA
+
+            .links 
+                each name in ['Services', 'Product', 'Technology', 'About', 'Client', 'Partner']
+                    a(href="#")= name
+                    img(src="img/arrow_down.png", alt="")
+                    
+                    
+
+
+            .imglinks
+                img(src="img/home.png", alt="")
+                img(src="img/mail.png", alt="")
+                img(src="img/shuffle.png", alt="")
+
         

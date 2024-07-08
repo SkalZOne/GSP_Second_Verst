@@ -1,4 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 a {
-  background: red;
+  text-decoration: none;
+  color: rgba(31, 46, 53, 0.8);
+}
+
+header {
+  border: 2px solid black;
+  height: 100px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .logo {
+  font-size: 75px;
+  font-weight: 900;
+  margin-top: 140px;
+}
+header .logo span {
+  margin: 0 -11px;
+}
+header .logo span:nth-child(1) {
+  color: #85171a;
+}
+header .logo span:nth-child(2) {
+  color: #dc2025;
+}
+header .logo span:nth-child(3) {
+  color: #feba08;
+}
+header .logo .righttext {
+  font-size: 16px;
+  position: relative;
+  width: 48px;
+  left: 110px;
+  bottom: 72px;
+}
+header .logo .righttext span {
+  font-weight: 500;
+}
+header .logo .righttext span:nth-child(1) {
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.6);
+}
+header .logo .righttext span:nth-child(3) {
+  letter-spacing: 1.2px;
+  color: rgba(38, 50, 56, 0.8);
+}
+header .logo .righttext span:nth-child(5) {
+  color: #263238;
+}
+header .links a {
+  margin-left: 40px;
+}
+header .links img {
+  display: none;
+  margin-left: 10px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+header .links img:nth-child(8) {
+  display: inline-block;
+}
+header .links img:nth-child(10) {
+  display: inline-block;
+}
+header .imglinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+  height: 16px;
+}
+header .imglinks img {
+  cursor: pointer;
+}
+header .imglinks img:nth-child(1) {
+  height: 18.59px;
 }
 /*# sourceMappingURL=main.css.map */
